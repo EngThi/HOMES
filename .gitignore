@@ -5,11 +5,34 @@ logs
 # OS files
 .DS_Store
 Thumbs.db
+*.tmp
 
-# Environment variables
+# Secrets and Env
 .env
 .env.local
+.secrets
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
 
 # Project specific
 devlog/2026-01-05. (typo file)
 GEMINI.md
+simulation_output/
+scripts/simulate_human_edits.py
+imagem_casa.jpg
+ROTA.md
+
+# Wakatime
+.wakatime-project
+
