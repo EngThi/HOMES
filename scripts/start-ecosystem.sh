@@ -9,14 +9,14 @@ echo "║         🚀 HOMES ECOSYSTEM - STARTING SERVICES             ║"
 echo "╚════════════════════════════════════════════════════════════╝"
 echo ""
 
-# Iniciar JARVIS (Feedback de Voz)
-if [ -f "jarvis.py" ]; then
-    python3 jarvis.py startup &
-elif [ -f "../HOMES/jarvis.py" ]; then
-    python3 ../HOMES/jarvis.py startup &
+# Iniciar HOMES AI (Feedback de Voz)
+if [ -f "homes_agent.py" ]; then
+    python3 homes_agent.py startup &
+elif [ -f "../HOMES/homes_agent.py" ]; then
+    python3 ../HOMES/homes_agent.py startup &
 else
-    # Fallback simples se jarvis.py não existir
-    termux-tts-speak "Iniciando ecossistema HOMES" 2>/dev/null || true
+    # Fallback simples se homes_agent.py não existir
+    termux-tts-speak "Iniciando sistema HOMES" 2>/dev/null || true
 fi
 
 # Diretório pai
